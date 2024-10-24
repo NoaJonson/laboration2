@@ -1,10 +1,10 @@
 import argparse
 from cryptography.fernet import Fernet
 
-beskrivning = "bla bla bla"
+beskrivning = "Generera en nyckel för att cryptera data med ett annat program"
 parser = argparse.ArgumentParser(description=beskrivning)
 
-parser.add_argument("filnamn", help="bla bla bla")
+parser.add_argument("filnamn", help="Namnet på filen där du vill spara nyckeln (skriver över allt i den filen)")
 
 args = parser.parse_args()
 
